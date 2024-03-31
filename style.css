@@ -1,0 +1,106 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calc-button {
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(53, 53, 184);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.calc-body {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+
+    display: grid;
+    grid-template-areas: 
+        'output output output output output'
+        'seven eight nine divide T'
+        'four five six multiply iv'
+        'one two three minus equal'
+        'zero dot ac plus equal';
+
+    place-items: center;
+    gap: 0.8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.calc-button-output {
+    grid-area: output;
+}
+
+.calc-button-1 {
+    grid-area: one;
+}
+.calc-button-2 {
+    grid-area: two;
+}
+.calc-button-3 {
+    grid-area: three;
+}
+.calc-button-4 {
+    grid-area: four;
+}
+.calc-button-5 {
+    grid-area: five;
+}
+.calc-button-6 {
+    grid-area: six;
+}
+.calc-button-7 {
+    grid-area: seven;
+}
+.calc-button-8 {
+    grid-area: eight;
+}
+.calc-button-9 {
+    grid-area: nine;
+}
+.calc-button-0 {
+    grid-area: zero;
+}
+.calc-button-dot {
+    grid-area: dot;
+}
+.calc-button-clear {
+    grid-area: ac;
+}
+.calc-button-plus {
+    grid-area: plus;
+}
+.calc-button-minus {
+    grid-area: minus;
+}
+.calc-button-multiply {
+    grid-area: multiply;
+}
+.calc-button-divide {
+    grid-area: divide;
+}
+.calc-button-equal {
+    grid-area: equal;
+}
+.calc-button-text {
+    grid-area: T;
+}
+.calc-button-rome {
+    grid-area: iv;
+}
