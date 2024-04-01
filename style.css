@@ -6,12 +6,18 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.calc-button svg {
+    width: 50%;
+    stroke: white;
+    pointer-events: none;
+}
+
 .calc-button {
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
     color: white;
-    border: none;
+    border: 1px solid rgb(85, 85, 189);
     background-color: rgb(53, 53, 184);
     width: 100%;
     height: 100%;
@@ -19,32 +25,51 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    box-sizing: border-box;
 }
-
+.calc-button:hover {
+    background-color: rgb(77, 77, 202);
+}
+.calc-button:active {
+    background-color: rgb(130, 130, 250);
+}
 .calc-body {
-    width: 100%;
+    width: 92vmin;
     max-width: 400px;
-    height: 400px;
     background-color: rgb(24, 24, 24);
     color: white;
 
+    font-size: 30px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.calc-output {
+    margin-bottom: 1rem;
+    text-align: end;
+    margin: 2rem 0;
+}
+.output-statement {
+    min-height: 1.3333em;
+    color: rgb(165, 165, 165);
+}
+.output-result {
+    font-size: 50px;
+    overflow: auto;
+}
+
+.calc-button-grid {
+    height: 69vmin;
+    max-height: 300px;
     display: grid;
     grid-template-areas: 
-        'output output output output output'
-        'seven eight nine divide T'
-        'four five six multiply iv'
+        'seven eight nine divide remove'
+        'four five six multiply equal'
         'one two three minus equal'
         'zero dot ac plus equal';
 
     place-items: center;
-    gap: 0.8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 30px;
-}
-.calc-button-output {
-    grid-area: output;
 }
 
 .calc-button-1 {
@@ -98,9 +123,6 @@ body {
 .calc-button-equal {
     grid-area: equal;
 }
-.calc-button-text {
-    grid-area: T;
-}
-.calc-button-rome {
-    grid-area: iv;
+.calc-button-remove {
+    grid-area: remove;
 }

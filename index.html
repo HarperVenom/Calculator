@@ -9,32 +9,56 @@
 <body>
     <div class="calc-body">
         <div class="calc-output">
-            <div class="output-statement">0000</div>
-            <div class="output-result">0000</div>
+            <div class="output-statement">0</div>
+            <div class="output-result">0</div>
         </div>
-        <button class="calc-button-1 calc-button">1</button>
-        <button class="calc-button-2 calc-button">2</button>
-        <button class="calc-button-3 calc-button">3</button>
-        <button class="calc-button-4 calc-button">4</button>
-        <button class="calc-button-5 calc-button">5</button>
-        <button class="calc-button-6 calc-button">6</button>
-        <button class="calc-button-7 calc-button">7</button>
-        <button class="calc-button-8 calc-button">8</button>
-        <button class="calc-button-9 calc-button">9</button>
-        <button class="calc-button-0 calc-button">0</button>
-
-        <button class="calc-button-dot calc-button">.</button>
-        <button class="calc-button-clear calc-button">AC</button>
-
-        <button class="calc-button-plus calc-button">+</button>
-        <button class="calc-button-minus calc-button">-</button>
-        <button class="calc-button-multiply calc-button">x</button>
-        <button class="calc-button-divide calc-button">/</button>
-
-        <button class="calc-button-text calc-button">T</button>
-        <button class="calc-button-rome calc-button">XI</button>
-
-        <button class="calc-button-equal calc-button">=</button>
+        <div class="calc-button-grid">
+            <button class="calc-button-1 calc-button">1</button>
+            <button class="calc-button-2 calc-button">2</button>
+            <button class="calc-button-3 calc-button">3</button>
+            <button class="calc-button-4 calc-button">4</button>
+            <button class="calc-button-5 calc-button">5</button>
+            <button class="calc-button-6 calc-button">6</button>
+            <button class="calc-button-7 calc-button">7</button>
+            <button class="calc-button-8 calc-button">8</button>
+            <button class="calc-button-9 calc-button">9</button>
+            <button class="calc-button-0 calc-button">0</button>
+    
+            <button class="calc-button-dot calc-button">.</button>
+            <button class="calc-button-clear calc-button">AC</button>
+    
+            <button class="calc-button-plus calc-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+            </button>
+            <button class="calc-button-minus calc-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                  </svg>
+            </button>
+            <button class="calc-button-multiply calc-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+            </button>
+            <button class="calc-button-divide calc-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="divide"><rect width="256" height="256" stroke="none" fill="none"></rect><line x1="40" x2="216" y1="128" y2="128"  stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></line><circle fill="white" cx="128" cy="64" r="14"></circle><circle fill="white" cx="128" cy="192" r="14"></circle></svg>
+            </button>
+    
+            <button class="calc-button-remove calc-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75 14.25 12m0 0 2.25 2.25M14.25 12l2.25-2.25M14.25 12 12 14.25m-2.58 4.92-6.374-6.375a1.125 1.125 0 0 1 0-1.59L9.42 4.83c.21-.211.497-.33.795-.33H19.5a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-9.284c-.298 0-.585-.119-.795-.33Z" />
+                  </svg>
+                  
+            </button>
+            <button class="calc-button-equal calc-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                  </svg>
+                  
+            </button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
