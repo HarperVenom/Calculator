@@ -13,7 +13,7 @@ body {
 }
 
 .calc-button {
-    font-size: 24px;
+    font-size: 100%;
     font-weight: 500;
     cursor: pointer;
     color: white;
@@ -35,17 +35,16 @@ body {
 }
 .calc-body {
     width: 92vmin;
-    max-width: 400px;
+    max-width: 500px;
     background-color: rgb(24, 24, 24);
     color: white;
 
     font-size: 30px;
-    padding: 1rem;
+    padding: 5%;
     border-radius: 10px;
 
     border: 2px solid rgb(170, 170, 252);
     outline: 6px solid rgb(53, 53, 184);
-    /* outline-offset: -10px; */
     box-sizing: border-box;
 }
 
@@ -66,7 +65,9 @@ body {
 
 .calc-button-grid {
     height: 69vmin;
-    max-height: 300px;
+    max-height: 320px;
+    max-width: 400px;
+    margin: auto;
     display: grid;
     grid-template-areas: 
         'seven eight nine divide remove'
