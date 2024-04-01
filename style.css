@@ -35,12 +35,12 @@ body {
 }
 .calc-body {
     width: 92vmin;
-    max-width: 500px;
+    max-width: 600px;
     background-color: rgb(24, 24, 24);
     color: white;
 
     font-size: 30px;
-    padding: 5%;
+    padding: 1em;
     border-radius: 10px;
 
     border: 2px solid rgb(170, 170, 252);
